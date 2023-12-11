@@ -265,6 +265,19 @@ map <leader>n :NERDTreeTabsToggle<CR>
 " Ignore files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '__pycache__']
 
+
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+       			\ 'Modified'  :'●',
+       			\ 'Staged'    :'✚',                 
+			\ 'Untracked' :'✭',                 
+			\ 'Renamed'   :'➜',                 
+			\ 'Unmerged'  :'═',                 
+			\ 'Deleted'   :'✖',                 
+			\ 'Dirty'     :'✗',                 
+			\ 'Ignored'   :'☒',                 
+			\ 'Clean'     :'✔︎',                 
+			\ 'Unknown'   :'?',                 
+			\ }
 " ---------------
 " System Clipboard
 " ---------------
