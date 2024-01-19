@@ -68,10 +68,14 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'Exafunction/codeium.vim'
 Plug 'dense-analysis/ale'
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
+" Javascript/Typescript stuff
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Color Schemes managed by vim-plug
 Plug 'tomasr/molokai'
