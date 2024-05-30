@@ -135,7 +135,7 @@ au BufNewFile,BufRead *.py
 " ----------------
 " Web Development Indendtation
 " ----------------
-au BufNewFile,BufRead *.js,*.html,*.css 
+au BufNewFile,BufRead *.js,*.html,*.css,*.jsx,*.tsx,*.ts
     \ set tabstop=2 | 
     \ set softtabstop=2 | 
     \ set shiftwidth=2 
