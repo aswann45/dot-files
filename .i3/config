@@ -7,6 +7,14 @@ set $mod Mod4
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
+# setup citrix mode
+mode "$mode_citrix" {
+	set $mod Mod4
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+c mode "$mode_citrix"
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
 default_floating_border normal
@@ -44,8 +52,8 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-##exec --no-startup-id volumeicon
-##bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+###exec --no-startup-id volumeicon
+###bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
